@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/htmx.org@1.9.11"
+    integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0"
+    crossorigin="anonymous"></script>
+  <title>zuic</title>
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-950 text-white flex flex-col gap-2">
+  <nav class="bg-gradient-to-r from-slate-800 to-slate-900 p-2 flex flex-row justify-between items-center">
+    <a class="px-2 font-extrabold" href="/"> z i u c</a>
+    <ul class="flex flex-row gap-2 justify-between p-2">
+      <a href="/">
+        <li class="p-2 transition hover:bg-slate-950 rounded-sm">home</li>
+      </a>
+      <a href="/about-me">
+        <li class="p-2 transition hover:bg-slate-950 rounded-sm">about me</li>
+      </a>
+      <a href="/students">
+        <li class="p-2 transition hover:bg-slate-950 rounded-sm">students</li>
+      </a>
+      <a href="/classes">
+        <li class="p-2 transition hover:bg-slate-950 rounded-sm">classes</li>
+      </a>
+    </ul>
+  </nav>
+
+  <cointainer class="flex flex-col gap-2 p-2">
+    <p class="text-xl font-bold">About!</p>
+    <a class="p-2 w-fit bg-grey-500 bg-white text-black" href="/about-me">click</a>
+  </cointainer>
+
+</body>
+
+</html>
