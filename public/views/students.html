@@ -31,9 +31,86 @@
   </nav>
 
   <cointainer class="flex flex-col gap-2 p-2">
-    <p class="text-xl font-bold">students!</p>
-    <a class="p-2 w-fit bg-grey-500 bg-white text-black" href="/about-me">click</a>
+    <form hx-post="/api/students"
+      class="flex flex-col md:flex-row text-white w-full justify-between p-6 bg-slate-800 rounded-lg">
+      <h3 class="font-bold text-2xl text-center">Add new Student</h3>
+      <input class="bg-slate-950 p-2 rounded-lg" type="text" name="firstname" placeholder="firstname">
+      <input class="bg-slate-950 p-2 rounded-lg" type="text" name="name" placeholder="name">
+      <!--
+Gender radial selector-->
+      <select class="bg-slate-950 p-2 rounded-lg">
+        <option selected disabled>
+          Select the Gender
+        </option>
+        <option>
+          Male
+        </option>
+        <option>
+          Female
+        </option>
+        <option>
+          Other
+        </option>
+      </select>
+      <input class="bg-slate-950 p-2 rounded-lg" type="date" name="birthdate" placeholder="birthdate">
+      <!--
+The class selector should be a dropdown with all classes as options. (Provided by the API)
+For now hardcoded
+-->
+      <select class="bg-slate-950 p-2 rounded-lg">
+        <option selected disabled>
+          Select the Class
+        </option>
+        <option>
+          1A
+        </option>
+        <option>
+          1B
+        </option>
+        <option>
+          1C
+        </option>
+        <option>
+          2A
+        </option>
+        <option>
+          2B
+        </option>
+        <option>
+          2C
+        </option>
+        <option>
+          3A
+        </option>
+        <option>
+          3B
+        </option>
+        <option>
+          3C
+        </option>
+        <option>
+          4A
+        </option>
+        <option>
+          4B
+        </option>
+        <option>
+          4C
+        </option>
+        <option>
+          5A
+        </option>
+        <option>
+          5B
+        </option>
+        <option>
+          5C
+        </option>
+        <select>
+          <button class=" w-fit bg-slate-950 p-2 px-6 rounded-lg hover:bg-slate-600 transition">submit</button>
+    </form>
   </cointainer>
+
 
 </body>
 
